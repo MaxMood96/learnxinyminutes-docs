@@ -99,7 +99,7 @@ fn main() {
     // A string slice – an immutable view into another string
     // This is basically an immutable pair of pointers to a string – it doesn’t
     // actually contain the contents of a string, just a pointer to
-    // the begin and a pointer to the end of a string buffer,
+    // the beginning and a pointer to the end of a string buffer,
     // statically allocated or contained in another object (in this case, `s`).
     // The string slice is like a view `&[u8]` into `Vec<T>`.
     let s_slice: &str = &s;
@@ -344,6 +344,10 @@ fn main() {
 
 ## Further reading
 
+For a deeper-yet-still-fast explanation into Rust and its symbols/keywords, the
+[half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
+article by Fasterthanlime explains (almost) everything in a clear and concise way!
+
 There’s a lot more to Rust—this is just the basics of Rust so you can understand
 the most important things. To learn more about Rust, read [The Rust Programming
 Language](http://doc.rust-lang.org/book/index.html) and check out the
@@ -351,5 +355,5 @@ Language](http://doc.rust-lang.org/book/index.html) and check out the
 irc.mozilla.org are also always keen to help newcomers.
 
 You can also try out features of Rust with an online compiler at the official
-[Rust playpen](http://play.rust-lang.org) or on the main
+[Rust Playground](https://play.rust-lang.org) or on the main
 [Rust website](http://rust-lang.org).
